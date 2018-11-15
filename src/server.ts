@@ -1,5 +1,6 @@
 const express = require('express');
 const expressSession=require('express-session');
+import {UserService} from './services/user.service';
 class App{
     public express;
     constructor(){
@@ -22,6 +23,6 @@ class App{
         this.setUpRoutes();
     }
     setUpRoutes(){
-        
+        new UserService().registerRoutes(this.express);
     }
 }

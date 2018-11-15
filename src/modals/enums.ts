@@ -1,0 +1,18 @@
+export enum AccountUserStatus{
+    PENDING_APPROVAL='pendingApproval',
+    PENDING_CONFIRMATION='pendingConfirmation',
+    STARTED='started',
+    REJECTED='rejected',
+    DELETED='deleted',
+    SUSPENDED='suspended',
+    SERVING='serving'
+}
+
+export enum NotificationTypes{
+    ACCOUNTAPPROVAL='ACCOUNTAPPROVAL',
+    CAMPAIGNAPPROVAL='CAMPAIGNAPPROVAL',
+    ACCOUNTAPPROVED='ACCOUNTAPPROVED',
+    ACCOUNTREJECTED='ACCOUNTREJECTED',
+    CAMPAIGNAPPROVED='CAMPAIGNAPPROVED',
+    CAMPAIGNREJECTED='CAMPAIGNREJECTED'
+}
